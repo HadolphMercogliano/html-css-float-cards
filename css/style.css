@@ -7,7 +7,7 @@
 
 /* variables */
 :root {
-   --primary: red;
+    --primary:#ff3995;
 }
 
 /* Generics */
@@ -17,10 +17,22 @@
     display: block;
  }
 body {
-
+    font-family: 'Fredoka', sans-serif;
 }
 
 /* Utility */
 .container {
     margin:0 auto;
+    width: 1000px;
+}
+
+/* main */
+
+h1 {
+    color:var(--primary);
+    margin:2rem;
+    text-align: center;
+}
+.description {
+    text-align: center;
 }
