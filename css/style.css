@@ -1,0 +1,26 @@
+/* CSS reset */
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+   --primary: red;
+}
+
+/* Generics */
+ .clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+ }
+body {
+
+}
+
+/* Utility */
+.container {
+    margin:0 auto;
+}
