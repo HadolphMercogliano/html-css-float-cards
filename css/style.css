@@ -7,7 +7,7 @@
 
 /* variables */
 :root {
-    --primary:#ff3995;
+    --primary:#ff1381;
     --secondary:#00ffff;
 }
 
@@ -23,8 +23,9 @@ body {
 
 /* Utility */
 .container {
-    margin:0 auto;
+    margin:20px auto;
     max-width: 1000px;
+    
 }
 a {
     text-decoration: none;
@@ -45,17 +46,17 @@ h1 {
 }
 .raw {
     color:white;
-    
-
 }
 .column {
     margin: 1rem;
     width: calc(100% / 3 - 2rem);
     background-color: black;
     float: left;
+    box-shadow: 1px 1px 10px #888888;
+    overflow-x: auto;
 }
-h4 {
-    
+.column > :not(img){
+    margin:5px 0;
 }
 .column img {
     float: left;
