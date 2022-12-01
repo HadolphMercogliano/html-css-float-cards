@@ -8,6 +8,7 @@
 /* variables */
 :root {
     --primary:#ff3995;
+    --secondary:#00ffff;
 }
 
 /* Generics */
@@ -23,11 +24,17 @@ body {
 /* Utility */
 .container {
     margin:0 auto;
-    width: 1000px;
+    max-width: 1000px;
 }
-
+a {
+    text-decoration: none;
+    color: var(--secondary);
+    font-size: 16px;
+}
+a:visited {
+    color: var(--secondary) ;
+}
 /* main */
-
 h1 {
     color:var(--primary);
     margin:2rem;
@@ -35,4 +42,23 @@ h1 {
 }
 .description {
     text-align: center;
+}
+.raw {
+    color:white;
+    
+
+}
+.column {
+    margin: 1rem;
+    width: calc(100% / 3 - 2rem);
+    background-color: black;
+    float: left;
+}
+h4 {
+    
+}
+.column img {
+    float: left;
+    width: 100px;
+    padding-right: 1rem;
 }
