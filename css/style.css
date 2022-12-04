@@ -51,6 +51,7 @@ h1 {
     color:white;
     margin: 0 -1rem;
 }
+/* card section */
 .card {
     height: 100px;
     min-width: 300px;
@@ -61,6 +62,7 @@ h1 {
     box-shadow: 1px 1px 10px #888888;
     overflow-x: auto;
 }
+/* card content section */
 .card img {
     float: left;
     height: 100%;
@@ -68,8 +70,8 @@ h1 {
 }
 .card-text {
     height: 100px;
+    padding: 5px;
     display: flex;
-    ;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
