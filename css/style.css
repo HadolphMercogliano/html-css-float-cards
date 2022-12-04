@@ -16,7 +16,7 @@
     content: '';
     clear: both;
     display: block;
- }
+}
 body {
     font-family: 'Fredoka', sans-serif;
 }
@@ -25,7 +25,6 @@ body {
 .container {
     margin:20px auto;
     max-width: 1000px;
-    
 }
 a {
     text-decoration: none;
@@ -35,6 +34,7 @@ a {
 a:visited {
     color: var(--secondary) ;
 }
+
 /* main */
 h1 {
     color:var(--primary);
@@ -42,12 +42,18 @@ h1 {
     text-align: center;
 }
 .description {
-    text-align: center;
+    text-align:center;
+    /* chiedere per il center justify */
 }
+
+/* raw section */
 .raw {
     color:white;
+    margin: 0 -1rem;
 }
-.column {
+.card {
+    height: 100px;
+    min-width: 300px;
     margin: 1rem;
     width: calc(100% / 3 - 2rem);
     background-color: black;
@@ -55,11 +61,15 @@ h1 {
     box-shadow: 1px 1px 10px #888888;
     overflow-x: auto;
 }
-.column > :not(img){
-    margin:5px 0;
-}
-.column img {
+.card img {
     float: left;
-    width: 100px;
-    padding-right: 1rem;
+    height: 100%;
+    margin-right: 1rem;
+}
+.card-text {
+    height: 100px;
+    display: flex;
+    ;
+    flex-direction: column;
+    justify-content: center;
 }
